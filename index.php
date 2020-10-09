@@ -7,15 +7,11 @@
 <?php
 $filename='date.txt';
 
- // Open the file
-$fp = @fopen($filename, 'r'); 
+$lines = array();
+while (($line = fgets($file)) !== false)
+    array_push($lines, $line);
 
-// Add each line to an array
-if ($fp) {
-   $array = explode("\n", fread($fp, filesize($filename)));
-}
-
-print_r(array_values($array));
+print_r(array_values($lines));
 ?>
  </body>
 </html>

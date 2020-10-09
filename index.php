@@ -6,12 +6,23 @@
 
 <?php
 $filename='date.txt';
+$studenti = array (
+    array("Pop","Ion","CAL",3,"buget"),
+    array("Popescu","Ana","TCM",1,"taxa"),
+    array("Bob","Alina","CAL",2,"buget"),
+    array("Ionescu","Ciprian",2,"taxa")
+  );
 
-$lines = array();
-while (($line = fgets($file)) !== false)
-    array_push($lines, $line);
+  for ($row = 0; $row < 4; $row++) {
+    echo "<p><b>Row number $row</b></p>";
+    echo "<ul>";
+    for ($col = 0; $col < 3; $col++) {
+      echo "<li>".$studenti[$row][$col]."</li>";
+    }
+    echo "</ul>";
+  }
+  ?>
 
-print_r(array_values($lines));
 ?>
  </body>
 </html>

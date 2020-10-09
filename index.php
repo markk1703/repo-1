@@ -7,10 +7,10 @@
 <?php
 $filename='date.txt';
 $studenti = array (
-    array("nume"=>"Pop","prenume"=>"Ion","specializare"=>"CAL","an"=>3,"buget"=>"buget"),
-    array("nume"=>"Popescu","prenume"=>"Ana","specializare"=>"TCM","an"=>1,"buget"=>"taxa"),
-    array("nume"=>"Bob","prenume"=>"Alina","specializare"=>"CAL","an"=>2,"buget"=>"buget"),
-    array("nume"=>"Ionescu","prenume"=>"Ciprian","specializare"=>"TCM","an"=>2,"buget"=>"taxa")
+    array("Pop","Ion","CAL",3,"buget"),
+    array("Popescu","Ana","TCM",1,"taxa"),
+    array("Bob","Alina","CAL",2,"buget"),
+    array("Ionescu","Ciprian","TCM",2,"taxa")
   );
 
   for ($row = 0; $row < 4; $row++) {

@@ -1,15 +1,21 @@
 <html>
  <head>
-  <title>PHP Test</title>
+  <title>PHP App 1</title>
  </head>
  <body>
- <?php echo '<p>Hello World</p>'; ?> 
 
- <form action="welcome.php" method="post">
-Name: <input type="text" name="name"><br>
-E-mail: <input type="text" name="email"><br>
-<input type="submit">
-</form>
+<?php
+$filename='date.txt';
 
+ // Open the file
+$fp = @fopen($filename, 'r'); 
+
+// Add each line to an array
+if ($fp) {
+   $array = explode("\n", fread($fp, filesize($filename)));
+}
+
+print_r(array_values($array));
+?>
  </body>
 </html>

@@ -16,7 +16,7 @@ $studenti = array (
   for ($row = 0; $row < 4; $row++) {
     echo "<p><b>Row number $row</b></p>";
     echo "<ul>";
-    for ($col = 0; $col < 3; $col++) {
+    for ($col = 0; $col < 4; $col++) {
       echo "<li>".$studenti[$row][$col]."</li>";
     }
     echo "</ul>";

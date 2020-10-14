@@ -1,5 +1,6 @@
-Pop Ion, CAL, An I, buget
-Bob Andrei, EA, An II, buget
-Boc Mihaela, CAL, An IV, taxa
-Pop Anca, TCM, An II, buget
-Popescu Ionut, ISEE, An II, taxa
+Pop Ion, CAL, 1, buget
+Bob Andrei, EA, 2, buget
+Boc Mihaela, CAL, 4, taxa
+Pop Anca, TCM, 2, buget
+Popescu Ionut, ISEE, 2, taxa
+Ionescu Ciprian, CAL, 3, taxa

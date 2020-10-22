@@ -8,6 +8,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
  -->
 
+
  <body>
 <?php
 $host='remotemysql.com';
@@ -28,6 +29,8 @@ try {
   ?>
 
 <br>
+<button type="button" id="afis" class="btn btn-primary btn-lg">Ascunde/Afiseaza tabel</button><br><br>
+
 <button type="button" onclick="window.location.replace('insert.php')" class="btn btn-info">Adauga</button>
 
 <form method="post" action="deleteProcess.php" class="form-group">
@@ -76,11 +79,19 @@ echo
 <td>$row[prenume]</td>
 <td>$row[varsta]</td>
 </tr>";
-
-   
   }
 ?>
     </tbody>
 </table>
       </body>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script>
+      $(function()
+      {
+        $('#afis').on('click',function(){
+          $('#tabel').toggle();
+        });
+      });
+      </script>
 </html>

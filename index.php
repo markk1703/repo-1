@@ -34,20 +34,20 @@ try {
 <button type="button" onclick="window.location.replace('insert.php')" class="btn btn-info">Adauga</button>
 
 <form method="post" action="deleteProcess.php" class="form-group">
-		<br>ID:
-    <input type="number" min="1" name="ID" required>
+  <br><label for="ID">ID:</label>
+    <input type="number" min="1"  name="ID" placeholder="Stergeti in functie de ID" required>
     <input type="submit" onclick="deleteProcess.php" class="btn btn-danger" name="delete" value="Sterge">
 </form>
 
 <form method="post" action="modifyProcess.php" class="form-group">
-		<br>ID:
-    <input type="number" min="1" name="ID" required>
-    Nume:
-		<input type="text" name="Nume" required>
-		Prenume:
-		<input type="text" name="Prenume" required>
-		Varsta:
-		<input type="number" min="1" name="Varsta" required>
+		<br><label for="ID">ID:</label>
+    <input type="number" min="1"  name="ID" placeholder="Introduceti ID-ul" required>
+    <label for="Nume">Nume:</label>
+		<input type="text" name="Nume" placeholder="Introduceti noul nume" required>
+		<label for="Prenume">Prenume:</label>
+		<input type="text" name="Prenume" placeholder="Introduceti noul prenume" required>
+		<label for="Varsta">Varsta:</label>
+		<input type="number" min="1" name="Varsta" placeholder="Introduceti noua varsta" required>
     <input type="submit" onclick="modifyProcess.php" class="btn btn-warning" name="modify" value="Modifica">
 </form>
 

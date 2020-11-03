@@ -15,7 +15,7 @@
 $host='remotemysql.com';
 $dbname='iMCgx6S15o';
 $user='iMCgx6S15o';
-$pass='tgAwqOlsOx';
+$pass='HeCzi32c0E';
 
 //conectare la db
 try {
